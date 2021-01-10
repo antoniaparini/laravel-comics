@@ -20,13 +20,17 @@ class ComicController extends Controller
          */
 
          $comic = [];
+         
+         //Itero e vado a pescare solo l'elemento che mi serve
+         //Io itero su tutti gli items di comics, ciclo su tutti gli elementi e ad ogni elemento faccio una comparazione tra la sua chiave 'id' e l'id passato in rotta
          foreach ($comics as $item){
              if($id == $item['id']){
                  $comic = $item;
              }
 
          }
-         dd($comic);
+         //dd($comic);
+         return view ('comics.show');
 
     }
 
