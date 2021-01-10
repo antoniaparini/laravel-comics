@@ -25,4 +25,4 @@ Route::get('/', function () {
     //dd($comics);
 
     return view('home', compact('comics'));
-});->name('home'); //come dare nome alla route
+});
