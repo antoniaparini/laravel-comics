@@ -2,6 +2,12 @@
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-columns: 1fr 1fr 1fr 1fr;
+    //grid-template-columns: repeat(4, 1fr) -> Nr di colonne e loro larghezza
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
 
+    img {
+        width: 100%;
+    }
 }
