@@ -30,7 +30,7 @@ class ComicController extends Controller
 
          }
          //dd($comic);
-         return view ('comics.show');
+         return view ('comics.show', compact('comic'));
 
     }
 
