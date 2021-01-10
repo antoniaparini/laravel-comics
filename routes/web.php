@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/**
+ * HOME PAGE
+ */
 
 Route::get('/', function () {
 
@@ -22,4 +25,4 @@ Route::get('/', function () {
     //dd($comics);
 
     return view('home', compact('comics'));
-});
+});->name('home'); //come dare nome alla route

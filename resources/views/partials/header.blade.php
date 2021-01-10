@@ -5,7 +5,8 @@
     <header class="main-header">
         <div class="container">
             <!--Utilizzo slash perchè punto alla HP-->
-            <a class="navbar-brand" href="/">
+            <!--Come passare parametro home alla route-->
+            <a class="navbar-brand" href="{{route('home')}}">
                 <img src="{{ asset ('images/logo.png') }}" alt="DC Comics logo">
             </a>
 
